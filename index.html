@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- <link rel="stylesheet" href="normalize.css"> -->
+    <link rel="stylesheet" href="style.css">
+    <title>MARDIKIAN INVESTMENTS</title>
+
+
+    <!--  Essential META Tags -->
+
+<meta property="og:title" content="MARDIKIAN INVESTMENTS">
+<meta property="og:description" content="Helping people to achieve their financial freedom">
+<meta property="og:image" content="https://www.goldmansachs.com/insights/pages/global-outlook-2020-f/800x450.jpg">
+<meta property="og:url" content="">
+<meta name="twitter:card" content="summary_large_image">
+
+
+<!--  Non-Essential, But Recommended -->
+
+<meta property="og:site_name" content="MARDIKIAN INVESTMENTS">
+<meta name="twitter:image:alt" content="Alt text for image">
+
+
+<!--  Non-Essential, But Required for Analytics -->
+
+<meta property="fb:app_id" content="your_app_id" />
+<meta name="twitter:site" content="@website-username">
+
+</head>
+
+<body>
+
+    <!-- Here goes the h1 initial title, the ticker symbol and the search bar -->
+    <header>
+        <span class="mardikian">MARDIKIAN INVESTMENTS</span>
+        <!-- TradingView Widget BEGIN -->
+        <div class="ticker">
+            <script type="text/javascript"
+                src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+                    {
+                        "symbols": [
+                            {
+                                "proName": "OANDA:SPX500USD",
+                                "title": "S&P 500"
+                            },
+                            {
+                                "proName": "OANDA:NAS100USD",
+                                "title": "Nasdaq 100"
+                            },
+                            {
+                                "proName": "FX_IDC:EURUSD",
+                                "title": "EUR/USD"
+                            },
+                            {
+                                "proName": "FX_IDC:GBPUSD",
+                                "title": "GBP/USD"
+                            },
+                            {
+                                "proName": "FX_IDC:USDCAD",
+                                "title": "USD/CAD"
+                            },
+                            {
+                                "proName": "FX_IDC:USDCHF",
+                                "title": "USD/CHF"
+                            },
+                            {
+                                "proName": "FX_IDC:USDJPY",
+                                "title": "USD/JPY"
+                            },
+                            {
+                                "proName": "FX_IDC:AUDUSD",
+                                "title": "AUD/USD"
+                            },
+                            {
+                                "proName": "FX_IDC:NZDUSD",
+                                "title": "NZD/USD"
+                            },
+                            {
+                                "proName": "BITSTAMP:BTCUSD",
+                                "title": "BTC/USD"
+                            },
+                            {
+                                "proName": "FX_IDC:XAUUSD",
+                                "title": "XAU/USD"
+                            },
+                            {
+                                "proName": "BITSTAMP:ETHUSD",
+                                "title": "ETH/USD"
+                            },
+                            {
+                                "description": "Apple",
+                                "proName": "AAPL"
+                            },
+                            {
+                                "description": "MicroSoft",
+                                "proName": "NASDAQ:MSFT"
+                            },
+                            {
+                                "description": "Google",
+                                "proName": "NASDAQ:GOOG"
+                            }
+                        ],
+                            "colorTheme": "light",
+                                "isTransparent": false,
+                                    "displayMode": "adaptive",
+                                        "locale": "en"
+                    }
+                </script>
+        </div>
+        <!-- TradingView Widget END -->
+
+        <!-- the serchForm -->
+        <form class="searchForm">
+            <!-- This is the name of the whole form, that we call in the js and css to modify -->
+            <input class='enter' autoFocus value='' placeholder="Enter your Stock Symbol" />
+            <!--This two imput are related because of the form-->
+            <input type="submit" class='searchButton' name='Search' />
+        </form>
+        <!-- End of the SearchForm -->
+
+        <div class="navbar">
+            <div class="dropdown">
+                <button class="dropbtn">SOFTWARE</button>
+                <div class="dropdown-content">
+                    <a class="stockMenu" id='AAPL'>APPLE</a>
+                    <a class="stockMenu" id='GOOG'>GOOGLE</a>
+                    <a class="stockMenu" id='FB'>FACEBOOK</a>
+                    <a class="stockMenu" id='MSFT'>MICROSOFT</a>
+                    <a class="stockMenu" id='AMZN'>AMAZON</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">FOOD</button>
+                <div class="dropdown-content">
+                    <a class="stockMenu" id='KO'>COCA COLA</a>
+                    <a class="stockMenu" id='PEP'>PEPSI CO</a>
+                    <a class="stockMenu" id='MCD'>McDONALDS</a>
+                    <a class="stockMenu" id='SBUX'>STARBUCKS</a>
+                    <a class="stockMenu" id='PG'>Procter & Gamble</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">HEALTH</button>
+                <div class="dropdown-content">
+                    <a class="stockMenu" id='PFE'>PFIZER</a>
+                    <a class="stockMenu" id='JNJ'>J&J</a>
+                    <a class="stockMenu" id='ABBV'>ABBVIE</a>
+                    <a class="stockMenu" id='NVS'>NOVARTIS</a>
+                    <a class="stockMenu" id='SNY'>SANOFI</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">ROBOTICS</button>
+                <div class="dropdown-content">
+                    <a class="stockMenu" id='IBM'>IBM</a>
+                    <a class="stockMenu" id='NVDA'>NVIDIA</a>
+                    <a class="stockMenu" id='TSLA'>TESLA</a>
+                    <a class="stockMenu" id='INTC'>INTEL</a>
+                    <a class="stockMenu" id='BABA'>ALIBABA</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">BANKS</button>
+                <div class="dropdown-content">
+                    <a class="stockMenu" id='BAC'>BANK OF AMERICA</a>
+                    <a class="stockMenu" id='C'>CITIGROUP</a>
+                    <a class="stockMenu" id='GS'>GOLDMAN SACHS</a>
+                    <a class="stockMenu" id='HSBC'>HSBC</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+
+    <!-- the main section, where we will insert the graphic from stockdio.com -->
+    <section>
+        <iframe class="graphic" frameBorder='0' scrolling='no' opacity='0.9'></iframe>
+        <!-- src='http://api.stockdio.com/visualization/financial/charts/v1/HistoricalPrices?app-key=780C13631F2B498BB1F173C50474FA6D&symbol=stkl&days=1&width=800&height=420' this is the url for the graphic that it will be inserted on the javascript-->
+    </section>
+
+
+
+    <aside>
+
+        <!-- Just one column, and all the data we need to see. We use this classes in order to get the querySelector and insert an H1 of data from the API  -->
+
+        <table>
+            <!-- This id will be erased in order to creat the data of the API and we will put the id='' to erase the gif-->
+            <tr class="firstTR">
+                <td class='tickerStock'></a><iframe class='investing'
+                        src="https://ssltsw.forexprostools.com?lang=1&stocks=334,345,346,347,348,349,350&commodities=8830,8836,8831,8849,8833,8862,8832&indices=175,166,172,27,179,174,176&forex=1,2,3,5,7,9,10&tabs=2,3,4,1"
+                        width="100%" height="380" frameBorder='0' scrolling='no' opacity='0.9'></iframe></td>
+            </tr>
+            <tr>
+                <td class='line'></td>
+            </tr>
+            <tr>
+                <td class='stockName'></td>
+            </tr>
+            <tr>
+                <td class='currentPrice'></td>
+            </tr>
+            <tr>
+                <td class='openPrice'></td>
+            </tr>
+            <tr>
+                <td class='highestPrice'></td>
+            </tr>
+            <tr>
+                <td class='lowestPrice'></td>
+            </tr>
+
+        </table>
+    </aside>
+
+    <footer>
+      
+
+        <!-- The marquee -->
+        <div class="news blue">
+            <span class="text1">
+                <marquee>NAVIGATE THROUGH THE MENU AND SEE OUR MOST RECOMMENDED STOCKS</marquee>
+            </span>
+        </div>
+
+        <!-- The icons social media -->
+        <div>
+            <img class="facebook" src="./images/twitter.png">
+            <img class="facebook" src="./images/linkedin.png">
+            <img class="facebook" src="./images/facebook.png">
+        </div>
+    </footer>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <!--Axios at the end, so we can call that library -->
+    <script src="script.js"></script>
+</body>
+
+</html>
